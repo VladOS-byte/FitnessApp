@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    tools:context="com.example.project05122017.RegistrationActivity"
+    android:background="#A5F5DB">
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                     <EditText
+                         android:id="@+id/editText0"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="20dp"
+                         android:ems="10"
+                         android:hint="@string/strForLogIn"
+                         android:inputType="textPostalAddress" />
+
+                     <EditText
+                         android:id="@+id/editText1"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="10dp"
+                         android:ems="10"
+                         android:hint="@string/strForPass"
+                         android:inputType="textPassword" />
+
+                     <EditText
+                         android:id="@+id/editText4"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="10dp"
+                         android:ems="10"
+                         android:hint="@string/strForName" />
+
+                     <EditText
+                         android:id="@+id/editText2"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="10dp"
+                         android:ems="10"
+                         android:hint="@string/height"
+                         android:inputType="numberDecimal" />
+
+                     <EditText
+                         android:id="@+id/editText3"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="10dp"
+                         android:ems="10"
+                         android:hint="@string/Weight"
+                         android:inputType="numberDecimal" />
+
+                     <EditText
+                         android:id="@+id/editText5"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="10dp"
+                         android:ems="10"
+                         android:hint="@string/e_mail"
+                         android:inputType="textEmailAddress" />
+
+                     <Switch
+                         android:id="@+id/switch0"
+                         android:layout_width="200dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="10dp"
+                         android:onClick="Registrate"
+                         android:textColor="#6684de"
+                         android:text="@string/remember" />
+                     <TextView
+                         android:id="@+id/textView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:autoLink="none"
+                         android:layout_gravity="center_horizontal"
+                         android:linksClickable="true"
+                         android:text=""
+                         android:clickable="true"
+                         android:onClick="Registrate"
+                         android:textColor="#0000FF"
+                         />
+                     <Button
+                 android:id="@+id/buttonOk"
+                 android:background="@null"
+                         android:textColor="#6684de"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="right"
+                 android:layout_marginEnd="20dp"
+                 android:clickable="false"
+                 android:onClick="Registrate"
+                 android:text="@string/ok"
+                 tools:ignore="RtlHardcoded" />
+                     <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv1"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="#FF0000"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="10dp"/>
+
+             </LinearLayout>
+     </ScrollView>
+
+
+
+</RelativeLayout>

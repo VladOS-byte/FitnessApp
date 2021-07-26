@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/im"
+    android:id="@+id/ll"
+    android:layout_height="match_parent"
+    tools:context="com.example.project05122017.UprActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#6684de"
+                        android:gravity="center_horizontal"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:gravity="center_horizontal"
+                        android:textColor="#6684de"
+                        android:text=""
+                        android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:linksClickable="true"
+                android:text=""
+                android:textSize="20dp" />
+
+            <com.jjoe64.graphview.GraphView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:id="@+id/graph"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:hint="Ваш результат"
+                    android:inputType="number" />
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/blin"
+                    android:text="Добавить"
+                    android:textStyle="italic"
+                    android:textSize="13sp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/button" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

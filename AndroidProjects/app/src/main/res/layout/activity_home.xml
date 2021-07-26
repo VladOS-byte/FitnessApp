@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lla"
+    tools:context="com.example.project05122017.HomeActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="#6684de"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickMainScreen"
+        android:text="@string/OutDoors" />
+
+    <Button
+        android:id="@+id/button2"
+        android:background="@null"
+        android:layout_width="180dp"
+        android:textColor="#6684de"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button1"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickMainScreen"
+        android:text="@string/Home" />
+
+    <Button
+        android:id="@+id/buttonM"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#6684de"
+        android:onClick="onClickMainScreen"
+        android:text="Пользователи" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#6684de"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:onClick="onClickMainScreen"
+        android:text="@string/Exit" />
+
+</RelativeLayout>

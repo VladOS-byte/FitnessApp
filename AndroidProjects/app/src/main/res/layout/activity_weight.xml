@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:background="#A5F5DB"
+    android:orientation="vertical"
+    tools:context="com.example.project05122017.WeightActivity">
+<com.jjoe64.graphview.GraphView
+    android:id="@+id/graph0"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="250dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#6684de"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="ваш вес"
+            android:inputType="numberDecimal" />
+        <Button
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#6684de"
+            android:text="добавить"
+            android:id="@+id/button" />
+    </LinearLayout>
+</LinearLayout>

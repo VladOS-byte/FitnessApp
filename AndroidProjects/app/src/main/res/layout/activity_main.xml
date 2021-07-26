@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll"
+    android:background="@drawable/cosmos"
+    tools:context="com.example.project05122017.MainActivity">
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/shim"
+        android:gravity="center_horizontal"
+        android:text="SportAp"
+        android:textSize="30dp">
+
+    </com.romainpiel.shimmer.ShimmerTextView>
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#6684de"
+        android:background="@null"
+        android:onClick="onClickMain"
+        android:text="Вход"/>
+
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/buttonLogIn"
+        android:layout_marginStart="20dp"
+        android:onClick="onClickMain"
+        android:background="@null"
+        android:textColor="#6684de"
+        android:text="Новый Аккаунт" />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/editText0"
+        android:layout_alignStart="@+id/editText0"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textPostalAddress" />
+    <EditText
+        android:id="@+id/editText0"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/switch0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+    <Switch
+        android:id="@+id/switch0"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#6684de"
+        android:layout_centerVertical="true"
+        android:onClick="onClickMain"
+        android:text="Запомнить" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv0"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/switch0"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

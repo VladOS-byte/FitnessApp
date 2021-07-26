@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    tools:context="com.example.project05122017.SettingActivity1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tv0"
+                android:text=""
+                android:textColor="#FF0000"
+                android:textSize="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="ВЫБОР ТЕМЫ"
+            android:textColor="#6684de"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin"
+            android:entries="@array/themes"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="ИЗМЕНЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ"
+            android:textColor="#6684de"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:textColor="#6684de"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:hint="Пароль" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:textColor="#6684de"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:hint="@string/e_mail" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="#6684de"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:hint="@string/height" />
+
+            <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="onClick"
+                    android:text="Сохранить"
+                android:textColor="#6684de"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Версия: 1.2\nПавлов В.Д.\n2018"
+                android:textColor="#6684de"/>
+
+</LinearLayout>
+
+
+
